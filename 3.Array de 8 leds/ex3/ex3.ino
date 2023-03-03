@@ -15,7 +15,8 @@ const byte led3 = 8;
 const byte led4 = 9;         
 const byte led5 = 10;         
 const byte led6 = 11;        
-const byte led7 = 12;         
+const byte led7 = 12; 
+const byte buton1 = A3;        
 int temps=120;                // definir variable de temps en ms   
 
 //********** Setup ****************************************************************
@@ -28,11 +29,15 @@ void setup()
   pinMode(led4, OUTPUT);     
   pinMode(led5, OUTPUT);     
   pinMode(led6, OUTPUT);    
-  pinMode(led7, OUTPUT);   
+  pinMode(led7, OUTPUT); 
+  pinMode(buton1, INPUT);
+
 }
 
 //********** Loop *****************************************************************
 void loop()
+{
+ while(digitalRead(buton1) == HIGH)
 {
   digitalWrite(led0, HIGH);    
   digitalWrite(led1, LOW);  
@@ -131,6 +136,8 @@ void loop()
   digitalWrite(led7, LOW);    
   
   delay(240);                  // Els led's van a una velocitat de 200ms
+
+}
 }
 
 //********** Funcions *************************************************************
