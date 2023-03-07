@@ -76,7 +76,7 @@ void loop()
   digitalWrite(led5, LOW);     
   digitalWrite(led6, HIGH);    
   digitalWrite(led7, HIGH);     
-  
+    
   delay(temps);                  // Els led's van a una velocitat de 200ms
   
   digitalWrite(led0, LOW);   
