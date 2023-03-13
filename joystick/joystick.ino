@@ -22,4 +22,4 @@ void loop() {
   Serial.println(b);
   delay(temps);
 }
-if(x=)
+
